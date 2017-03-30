@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2017-03-25" view-index="0" gantt-divider-location="844" resource-divider-location="300" version="2.0" locale="fr_FR">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2017-03-29" view-index="0" gantt-divider-location="696" resource-divider-location="300" version="2.0" locale="fr_FR">
     <description/>
-    <view zooming-state="default:2" id="gantt-chart">
-        <field id="tpd3" name="Nom" width="80" order="0"/>
+    <view zooming-state="default:0" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="79" order="0"/>
         <field id="tpd4" name="Date de début" width="10" order="1"/>
         <field id="tpd5" name="Date de fin" width="9" order="2"/>
     </view>
     <view id="resource-table">
-        <field id="0" name="Nom" width="56" order="0"/>
-        <field id="1" name="Rôle par défaut" width="43" order="1"/>
+        <field id="0" name="Nom" width="52" order="0"/>
+        <field id="1" name="Rôle par défaut" width="47" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -35,16 +35,30 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="0" name="Gestion de projet (dictionnaire de données, matrice des dépendances fonctionnelles, MCD, MLD, MPD)" meeting="false" start="2017-03-30" duration="3" complete="0" expand="true"/>
-        <task id="1" name="Génération de la base de donnée, génération de données, importation des données dans la base" meeting="false" start="2017-04-03" duration="1" complete="0" expand="true"/>
-        <task id="2" name="Requêtes de soumission de recette" meeting="false" start="2017-04-03" duration="3" complete="0" expand="true"/>
-        <task id="3" name="Requêtes de sauvegarde" meeting="false" start="2017-04-03" duration="2" complete="0" expand="true"/>
-        <task id="4" name="Requêtes de gestion de la BDD" meeting="false" start="2017-04-04" duration="3" complete="0" expand="true"/>
-        <task id="5" name="Requêtes de recherche/consultation" meeting="false" start="2017-04-04" duration="3" complete="0" expand="true"/>
-        <task id="6" name="Faire power point et rendre livrable" meeting="false" start="2017-04-06" duration="1" complete="0" expand="true"/>
+        <task id="0" name="Merise : dictionnaire de données, matrice des dépendances fonctionnelles, MCD, MLD, MPD" color="#8cb6ce" meeting="false" start="2017-03-30" duration="3" complete="0" expand="true"/>
+        <task id="1" name="Génération de données, importation des données dans la base" color="#8cb6ce" meeting="false" start="2017-03-31" duration="2" complete="0" expand="true"/>
+        <task id="2" name="Requêtes de soumission de recette" color="#8cb6ce" meeting="false" start="2017-04-04" duration="3" complete="0" expand="true"/>
+        <task id="3" name="Requêtes de sauvegarde" color="#8cb6ce" meeting="false" start="2017-04-04" duration="2" complete="0" expand="true"/>
+        <task id="4" name="Procédures stockées" color="#8cb6ce" meeting="false" start="2017-04-04" duration="3" complete="0" expand="true"/>
+        <task id="5" name="Requêtes de recherche/consultation" color="#8cb6ce" meeting="false" start="2017-04-04" duration="2" complete="0" expand="true"/>
+        <task id="6" name="Faire Powerpoint, rapport et rendre livrable" color="#8cb6ce" meeting="false" start="2017-04-06" duration="1" complete="0" expand="true"/>
     </tasks>
-    <resources/>
-    <allocations/>
+    <resources>
+        <resource id="0" name="Gildas" function="Default:1" contacts="" phone=""/>
+        <resource id="1" name="Hugo" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="0" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="2" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="4" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="5" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="6" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="1" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="3" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="4" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="5" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="6" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+    </allocations>
     <vacations/>
     <taskdisplaycolumns>
         <displaycolumn property-id="tpd2" order="-1" width="75" visible="false"/>
@@ -56,9 +70,9 @@
         <displaycolumn property-id="tpd9" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd8" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd0" order="-1" width="75" visible="false"/>
-        <displaycolumn property-id="tpd3" order="0" width="675" visible="true"/>
-        <displaycolumn property-id="tpd4" order="1" width="87" visible="true"/>
-        <displaycolumn property-id="tpd5" order="2" width="78" visible="true"/>
+        <displaycolumn property-id="tpd3" order="0" width="552" visible="true"/>
+        <displaycolumn property-id="tpd4" order="1" width="74" visible="true"/>
+        <displaycolumn property-id="tpd5" order="2" width="66" visible="true"/>
     </taskdisplaycolumns>
     <previous/>
     <roles roleset-name="Default"/>
